@@ -1,0 +1,12 @@
+<div class="beers-container">
+  <h1>Beers</h1>
+  {{!-- Loop on beers --}}
+  {{#each beers}}
+    <div>
+      {{!-- this = the current beer (object); this.name = current name  --}}
+      <h3>{{this.name}}</h3>
+      <img src="{{this.image_url}}" alt="">
+
+    </div>
+  {{/each}}
+</div>
